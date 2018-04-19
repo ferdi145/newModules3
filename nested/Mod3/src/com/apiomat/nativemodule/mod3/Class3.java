@@ -53,6 +53,7 @@ public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com
     public static final String MODEL_NAME = "Class3";
 
     /** class specific attributes */
+    private String lala = null;
     /**
      * Protected constructor; to create a new instance, use the createObject() method
      */
@@ -75,6 +76,16 @@ public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com
     public String getModelName( )
     {
         return MODEL_NAME;
+    }
+
+    public String getLala()
+    {
+         return this.lala;
+    }
+
+    public void setLala( String arg )
+    {
+        this.lala = arg;
     }
 
 }
