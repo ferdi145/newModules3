@@ -32,7 +32,7 @@ package com.apiomat.nativemodule.mod3;
  * in these overridden methods, because they are initialized again before each call.
  * 
  */
-@com.apiomat.nativemodule.Module( description = "BESCHREIBUNG",
+@com.apiomat.nativemodule.Module( description = "BESCHREIBUNG VERAENDERT",
 	usedModules = { }, securityPermissions = { } )
 public class Mod3 implements com.apiomat.nativemodule.IModule
 {
