@@ -56,6 +56,7 @@ public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com
     private String dada = null;
     private String lala = null;
     private String test = null;
+    private String yyy = null;
     /**
      * Protected constructor; to create a new instance, use the createObject() method
      */
@@ -108,6 +109,16 @@ public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com
     public void setTest( String arg )
     {
         this.test = arg;
+    }
+
+    public String getYyy()
+    {
+         return this.yyy;
+    }
+
+    public void setYyy( String arg )
+    {
+        this.yyy = arg;
     }
 
 }
