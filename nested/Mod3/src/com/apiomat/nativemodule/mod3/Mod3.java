@@ -33,7 +33,7 @@ package com.apiomat.nativemodule.mod3;
  * 
  */
 @com.apiomat.nativemodule.Module( description = "BESCHREIBUNG VERAENDERT",
-	usedModules = { }, securityPermissions = { } )
+	usedModules = { "UsedMod" }, securityPermissions = { } )
 public class Mod3 implements com.apiomat.nativemodule.IModule
 {
 	static com.apiomat.nativemodule.IApplicationConfigProxy APP_CONFIG_PROXY;
