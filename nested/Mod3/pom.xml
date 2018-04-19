@@ -44,6 +44,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.apiomat.nativemodule</groupId>
+            <artifactId>UsedMod</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/UsedMod.jar</systemPath>
+        </dependency>
+        <dependency>
             <groupId>anttask</groupId>
             <artifactId>anttask</artifactId>
             <version>1.0.0</version>

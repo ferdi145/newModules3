@@ -37,9 +37,9 @@ import com.apiomat.nativemodule.basics.*;
 @com.apiomat.nativemodule.Model( moduleName = "Mod3",
     hooksClassNameTransient = "com.apiomat.nativemodule.mod3.Class3HooksTransient", 
     hooksClassNameNonTransient = "com.apiomat.nativemodule.mod3.Class3HooksNonTransient", 
-            isTransient = false,     requiredUserRoleCreate=com.apiomat.nativemodule.UserRole.User, requiredUserRoleRead=com.apiomat.nativemodule.UserRole.User,
+            isTransient = false,     requiredUserRoleCreate=com.apiomat.nativemodule.UserRole.User, requiredUserRoleRead=com.apiomat.nativemodule.UserRole.AppAdmin,
     requiredUserRoleWrite=com.apiomat.nativemodule.UserRole.Owner, restrictResourceAccess=false,
-    allowedRolesCreate={}, allowedRolesRead={},
+    allowedRolesCreate={}, allowedRolesRead={"reader"},
     allowedRolesWrite={}, allowedRolesGrant={})
 public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com.apiomat.nativemodule.mod3.Class3> implements com.apiomat.nativemodule.IModel<com.apiomat.nativemodule.mod3.Class3>
 {
@@ -55,6 +55,7 @@ public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com
     /** class specific attributes */
     private String dada = null;
     private String lala = null;
+    private String test = null;
     /**
      * Protected constructor; to create a new instance, use the createObject() method
      */
@@ -97,6 +98,16 @@ public class Class3 extends com.apiomat.nativemodule.AbstractClientDataModel<com
     public void setLala( String arg )
     {
         this.lala = arg;
+    }
+
+    public String getTest()
+    {
+         return this.test;
+    }
+
+    public void setTest( String arg )
+    {
+        this.test = arg;
     }
 
 }
